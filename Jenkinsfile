@@ -9,12 +9,12 @@ node ('HRMS && QA') {
       sh 'mvn clean package'
   }
 
-  stage ('Test Reports') {
+  //stage ('Test Reports') {
      junit 'spring-petclinic/target/surefire-reports/*.xml'
      // '**/surefire-reports/*.xml'
   }  
   
-  stage ('Archive the Artifacts') {
+ // stage ('Archive the Artifacts') {
       artifacts: '**/target/*.war'
   }
   
