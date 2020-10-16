@@ -1,4 +1,4 @@
-node ('HRMS && QA') {
+node ('HRMS&&QA') {
 // This illustrates the use of the node, which node to use.
 
   stage ('git VCS') {
